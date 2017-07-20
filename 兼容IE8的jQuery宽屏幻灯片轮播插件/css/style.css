@@ -1,0 +1,649 @@
+	@font-face {
+	    /* font-properties */
+	    font-family: JosefinSans;
+	    src:url('../dist/font/JosefinSans-SemiBold.ttf?t=201707120546') format('truetype'),
+	    url('../dist/font/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+	    url('../dist/font/JosefinSans-SemiBold.woff') format('woff');  
+	    /*url('pictos/pictos-web.eot');  IE9 */
+	}
+	@font-face {
+	    /* font-properties */
+	    font-family: OpenSans;
+	    src: url('../dist/font/OpenSans-Light.ttf?t=201707120546') format('truetype'), 
+	    url('../dist/font/OpenSans-Light.eot?#iefix') format('embedded-opentype'), 
+	    url('../dist/font/OpenSans-Light.woff') format('woff');
+	    /*url('pictos/pictos-web.eot');  IE9 */
+	}
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	html,body{
+		height: 100%;
+		min-width:1200px;
+		font-family: 'OpenSans';
+		background:#191F2D;
+	}
+	/*mouseon style*/
+	.taihe-cursor a,.taihe-cursor{
+		cursor:pointer;
+	}
+	.taihe-cursor-none a,.taihe-cursor-none{
+		cursor:auto !important;
+		color:#ffffff !important;
+	}
+	.pages.horizontal{
+		z-index:1001;
+	}
+	.main-container{
+		min-width:1485px;
+	}
+	.clear{
+		height:1px;
+		overflow:hidden;
+		clear:both;
+	}
+	#container {
+			width: 100%;
+			overflow: hidden;
+			top:0;
+	}
+	.sections,.section {
+		height:100%;
+	}
+	#container {
+		position: relative;
+	}
+	.sections{
+		position: absolute;
+	}
+	.section {
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+	}
+	.section .taihe-banner-title{
+		position:absolute;
+		top:60%;
+		left:10%;
+		text-align: left;
+		font-family: 'OpenSans';
+		font-weight: normal;
+		font-size:36px;
+	}
+	#section0 {
+		background-image: url('../images/1.jpg');
+	}
+	#section1 {
+		background-image: url('../images/2.jpg');
+	}
+	#section2 {
+		background-image: url('../images/3.jpg');
+	}
+	#section3 {
+		background-image: url('../images/4.jpg');
+	}
+
+	.header{
+		width:100%;
+		min-width:1200px;
+		top:60px;
+		z-index: 1000;
+	}
+		
+	.taihe-logo{
+		float:left;
+	}
+	.taihe-logo img{
+		width:150px;
+		height:50px;
+	}
+
+	.taihe-ul-box{
+		display:inline-block;
+		float:right;
+		font-family: 'JosefinSans';
+	}
+	.taihe-ul-box ul{
+		display:inline-block;
+	}
+	.taihe-ul-box ul li{
+		float:left;
+		display:block;
+		line-height:50px;
+		
+	}
+	.taihe-ul-box ul li a{
+		font-size:18px;
+		color:#EFF0F1;
+		padding:20px 18px;
+		font-family:"JosefinSans";
+		line-height: 24px;
+		letter-spacing: 2px;
+		cursor:;
+	}
+	.taihe-ul-box ul li a:hover{
+		color:#007AFF;
+		transition: all 200ms linear;
+	}
+	.taihe-active,.taihe-active a{
+		color:#007AFF !important;
+	}
+	.taihe-ul-box ul li a:{
+		transition: all 200ms linear;
+	}
+	
+	@media screen and (min-width: 1440px) {
+		/*.container{
+	   	  width: 1170px;
+		}*/
+		.header-inner{
+			width:1485px;
+			margin:0 auto;
+			position:relative;
+			height:106px;
+			box-sizing: border-box;
+		}
+		.header-inner-top{
+			width:1485px;
+		}
+		.main-inner{
+	   	  width: 1485px;
+	      margin:0 auto;
+	      padding:40px 0;
+		}
+		.front-icon img{
+			position:absolute;
+			width:80px;
+			height:auto;
+			top:120px;
+			left:120px;
+		}
+		.main-table{
+			height:1200px;
+		}
+		.slide-inner-box{
+			margin-top:150px;
+		}
+	}
+
+	@media screen and (min-width:1200px) and (max-width: 1440px) {
+		/*.container{
+	   	  width: 1170px;
+		}*/
+		.header-inner{
+			position:relative;
+			width:1199px;
+			margin:0 auto;
+			height:106px;
+			box-sizing: border-box;
+		}
+		.header-inner-top{
+			width:1199px;
+		}
+		.main-inner{
+	   	  width: 1199px;
+	      margin:0 auto;
+	      padding:40px 0;
+		}
+		.front-icon img{
+			position:absolute;
+			width:70px;
+			height:auto;
+			top:95px;
+			left:95px;
+		}
+		.main-table{
+			height:990px;
+		}
+		.slide-inner-box{
+			margin-top:200px;
+		}
+	}
+
+	@media screen and  (max-width: 1199px) {
+		.header-inner{
+			position:relative;
+			width:1199px;
+			margin:0 auto;
+			height:106px;
+			box-sizing: border-box;
+		}
+		.header-inner-top{
+			width:1199px;
+		}
+		.main-inner{
+  		width: 1199px;
+	      margin:0 auto;
+	      padding:40px 0;
+		}
+		.slide-inner-box{
+			margin-top:240px;
+		}
+	}
+	/*让*/
+	.pages.horizontal li{
+		cursor:pointer;
+		position:relative;
+		z-index:1001;
+	}
+	/*第二块*/
+	.main-inner-01{
+		box-sizing: border-box;
+		height:843px;
+	}
+	.main-inner-02{
+		background-image: url('../images/02_bg.jpg');
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+	}
+	#container03{
+		background-image: url('../images/03_bg.jpg');
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+		visibility:hidden;
+		z-index: 1;
+	}
+	/*设置滑动背景*/
+	#container05{
+		background-image: url('../images/05_bg.jpg');
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+		visibility:hidden;
+		z-index: 2;
+	}
+	#container06{
+		background-image: url('../images/06_bg.png');
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+		visibility:hidden;
+		z-index: 3;
+	}
+	#container07{
+		background-image: url('../images/07_bg.jpg');
+		background-color: #191F2D;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+		visibility:visible;
+		z-index: 1;
+	}
+/*	#container07{
+		background-image: url('images/07_bg.jpg');
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+		visibility:hidden;
+		z-index: 4;
+	}*/
+	.main-inner-07{
+		/*background-image: url('images/07_bg.jpg');*/
+		/*background-color: #222937;*/
+		background-size: 100%;
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		text-align: center;
+		color: white;
+		position: relative;
+	}
+	.main-inner-04{
+		background:#ffffff;
+	}
+	.main-inner-04h{
+		background-image: url('../images/04_bg.jpg');
+		background-color: #ffffff;
+		background-size: 100%;
+		background-position: top 50%;
+		background-repeat: no-repeat;
+		text-align: center;
+		color: white;
+		position: relative;
+		width:100%;
+	}
+	.view-more{
+		line-height:56px;
+		height:56px;
+		border:1px solid #ffffff;
+		float:left;
+		font-family:'JosefinSans';
+		margin-top:60px;
+		color:#fff;
+		padding:0 50px;
+		font-size: 20px;
+		transition: 200ms;
+		-webkit-transition: 200ms;
+		cursor:pointer;
+	}
+	.view-more:hover{
+		border:1px solid #ffffff;
+		background:#ffffff;
+		color:#000000;
+	}
+	.view-more:hover>a,.view-more>a:hover{
+		color:#000000;
+	}
+	.view-more a{
+		color:#ffffff;
+		font-family:'JosefinSans';
+		font-size: 20px;
+		color:#fff;
+	}
+	.view-more a:hover{
+		color:#000000;
+	}
+	.main-table dl dd{
+		cursor:pointer;
+		padding:0 25px;
+		width:24.99%;
+		float:left;
+		background:transparent;
+		box-sizing: border-box;
+		position:relative;
+		overflow: hidden;
+	}
+	.main-table dl dd:after{
+		  content:".";        
+	     display:block;        
+	     height:0;        
+	     clear:both;        
+	     visibility:hidden; 
+	}
+	.main-table dd>span{
+		width:100%;
+		padding-top:100%;
+		display:inline-block;
+		background:#fa3452;
+		position:relative;
+		z-index:99;
+		float:left;
+	}
+	.main-table dd>span>img{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.main-table dl:after{
+		content:".";        
+     	display:block;        
+    	height:0;        
+        clear:both;        
+        visibility:hidden;    
+	}
+	.main-inner-05{
+		z-index: 1;
+	}
+	.front-icon{
+		position:absolute;
+		top:250;
+		left:0;
+		background-color:rgba(0,0,0,0.6);
+		width:100%;
+		padding-top:100%;
+		transition: 1300ms;
+	}
+
+	.front-icon img{
+		position:absolute;
+		width:80px;
+		height:auto;
+		top:50%-80px;
+		left:50%-80px;
+	}
+	.front-icon_1{
+		position:absolute;
+		display:block;
+		top:250px;
+		left:0;
+		background-color:rgba(0,0,0,0.6);
+		width:100%;
+		padding-top:100%;
+		-webkit-transition: translate3d(0, -250px, 0);
+		transform: translate3d(0, -250px, 0);
+		transition:transform 800ms;
+		-webkit-transition:transform 800ms;
+	}
+/*	.front-icon_2{
+		position:absolute;
+		display:block;
+		top:0px;
+		left:0;
+		background-color:rgba(0,0,0,0.6);
+		width:100%;
+		padding-top:100%;
+		-webkit-transition: translate3d(0, 250px, 0);
+		transform: translate3d(0, 250px, 0);
+		transition:transform 800ms;
+		-webkit-transition:transform 800ms;
+	}*/
+
+	/*动画*/
+	.taihe-down{
+		-webkit-animation:mymove 1.5s infinite cubic-bezier(.25, .1, .25, 1);
+		animation:mymove 1.5s infinite cubic-bezier(.25, .1, .25, 1);
+		-moz-animation:mymove 1.5s infinite cubic-bezier(.25, .1, .25, 1);
+	}
+	.img_text_inner{
+		width:100%;
+		height:210px;
+		z-index:100;
+		position:relative;
+		background:#ffffff;
+		border:none;
+		overflow: hidden;
+		float:left;
+	}
+	.text_inner_title{
+		width:100%;height:90px;display:inline-block;
+		width:100%;height:90px;display:inline-block;
+	}
+	.title_fst{
+		float:left;height:6px;background:#46A6FF;width:34px;margin:40px 0;
+	}
+	.title_sec{
+		float:right;font-family: 'JosefinSans';color:#000000;font-size:20px;line-height: 24px;height:60px;text-align: right;padding-top:30px;
+	}
+	.text_inner_prase{
+		width:100%;
+		height:120px;
+		float:left;
+		background:#ffffff;
+	}
+	.text_inner_prase p{
+		text-align: left;color:#000000;
+	}
+	@keyframes mymove
+	{
+	0% {top:0px;}
+	50% {top:8px;}
+	100%{top:0px;}
+	}
+/* Firefox */
+	@-moz-keyframes mymove 
+	{
+	0% {top:0px;}
+	50% {top:8px;}
+	100%{top:0px;}
+	}
+ /* Safari 和 Chrome */
+	@-webkit-keyframes mymove
+	{
+		0% {top:0px;}
+		50% {top:8px;}
+		100%{top:0px;}
+	}
+/* Opera */
+	@-o-keyframes mymove 
+	{
+	0% {top:0px;}
+	50% {top:8px;}
+	100%{top:0px;}
+	}
+
+	.taihe-input{
+		
+	}
+	.taihe-input ul{
+		list-style: none;
+		font-family: 'JosefinSans';
+		margin-right:210px;
+	}
+	.taihe-input ul li{
+		margin-top:20px;
+		list-style: none
+	}
+	.taihe-input ul li input{
+		width:380px;
+		height:50px;
+		border:none;
+		padding-left:35px;
+		outline:none;
+	}
+
+	/**/
+	.contact-us-logo{
+		width:220px;
+		margin-top:80px;
+	}
+	.contact-us-logo>img{
+		width:100%;
+		height:auto;
+
+	}
+	.contact-us{
+
+	}
+	.contact-us ul{
+		list-style: none;
+		width:960px;
+		float:left;
+		margin-top:120px;
+	}
+	.contact-us ul li{
+		list-style: none;
+		height:120px;
+		width:100%;
+	}
+	 .contact-fst{
+		width:65px;
+		padding-top:10px;
+		float:left;
+	}
+	.contact-fst img{
+		width:40px;
+		height:auto;
+		float:left;
+	}
+	.contact-sec{
+		width:550px;
+		float:left;
+	}
+	.contact-sec p{
+		width:100%;
+		line-height:50px;
+		font-family: 'JosefinSans';
+		text-align: left;
+	}
+	.view-details{
+		float:left;
+		margin-top:25px !important;
+	}
+	.tran-fadein{
+		/*透明度为0，*/
+			    opacity: 0;
+			    /*ie低版本不支持opacity的  只支持filter再设置一次 */
+			    filter: alpha(opacity=0)\9;
+			    /*Y轴正方向向下20px的起始位置*/
+			    -webkit-transform: translate3d(0, 0, 0);
+			    /*浏览器兼容*/
+			    transform: translate3d(0, 0, 0);
+			    /*用时0.7s，cubic-bezier(0,0,0,0) 贝塞尔曲线*/
+			    -webkit-transition: -webkit-transform  700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+			    transition: transform 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 1700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+	}
+	.tran-title{
+				/*透明度为0，*/
+			    opacity: 0;
+			    /*ie低版本不支持opacity的  只支持filter再设置一次 */
+			    filter: alpha(opacity=0)\9;
+			    /*Y轴正方向向下20px的起始位置*/
+			    -webkit-transform: translate3d(0, 50px, 0);
+			    /*浏览器兼容*/
+			    transform: translate3d(0, 50px, 0);
+			    /*用时0.7s，cubic-bezier(0,0,0,0) 贝塞尔曲线*/
+			    -webkit-transition: -webkit-transform  700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+			    transition: transform 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 1700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+	}
+	.tran-left,.tran-left01{
+				/*透明度为0，*/
+			    opacity: 0;
+			    /*ie低版本不支持opacity的  只支持filter再设置一次 */
+			    filter: alpha(opacity=0)\9;
+			    /*Y轴正方向向下20px的起始位置*/
+			    -webkit-transform: translate3d(-50px, 0, 0);
+			    /*浏览器兼容*/
+			    transform: translate3d(-50px, 0, 0);
+			    /*用时0.7s，cubic-bezier(0,0,0,0) 贝塞尔曲线*/
+			    -webkit-transition: -webkit-transform  700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+			    transition: transform 700ms cubic-bezier(0.25, 0.46, 0.33, 0.98),opacity 1700ms cubic-bezier(0.25, 0.46, 0.33, 0.98);
+	}
+	.tran-fadein.is-visible,.tran-left.is-visible,.tran-left01.is-visible{
+			    opacity: 1;
+			    filter: alpha(opacity=100)\9;
+			    -webkit-transform: translate3d(0, 0, 0);
+			    transform: translate3d(0, 0, 0);
+	}
+
+	.tran-title.is-visible,.tran-left.is-visible,.tran-fadein.is-visible{
+			    opacity: 1;
+			    filter: alpha(opacity=100)\9;
+			    -webkit-transform: translate3d(0, 0, 0);
+			    transform: translate3d(0, 0, 0);
+			}
+	/*此处tran-title p 后面这两个属性要放在后面才能出动画先后的效果*/
+	.tran-title, .tran-left,.tran-fadein{
+		-webkit-transition-delay: .7s;
+		transition-delay:  .7s;
+	}
+	.tran-fadein,.tran-left01{
+		-webkit-transition-delay: .5s;
+		transition-delay:  .5s;
+	}
+	/*.tran-title{
+		-webkit-transition-delay: .5s;
+		transition-delay: .5s;
+	}*/

@@ -1,0 +1,73 @@
+.detail-header-bg{
+			background-image: url('../images/01.jpg');
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+			text-align: center;
+			color: white;
+			position: relative;
+			min-height:932px;
+		}
+		.detail-header-bg2{
+			background-image: url('../images/about-us-bg.jpg');
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+			text-align: center;
+			color: white;
+			position: relative;
+			min-height:932px;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		
+		.inner-box-img{
+			width:45%;
+			padding:0 80px 0 150px;
+			box-sizing: border-box;
+			float:left;
+		}
+		.inner-box-img img{
+			width:100%;
+			height:auto;
+
+		}
+		.inner-box-detail{
+			width:55%;
+			float:left;
+			padding:0 150px 0 50px;
+			box-sizing: border-box;
+		}
+		.inner-box-detail{
+			width:55%;
+			float:left;
+			padding:0 150px 0 50px;
+			box-sizing: border-box;
+		}
+		.detail-fst{
+			margin-top:35px;
+		}
+		.detail-fst>p:first-child{
+			text-align: left;
+			font-size:24px;
+			font-family: 'JosefinSans';
+		}
+		.detail-fst .blue-bar{
+			margin-top:22.5px;
+			width:80px;
+			height:5px;
+			background:#49A0F1;
+			display:inline-block;
+			float:left;
+		}
+		.detail-sec{
+			margin-top:50px;
+		}
+		.detail-sec{
+			margin-top:50px;
+		}
+		.detail-sec p{
+			width:100%;text-align: left;line-height: 36px;font-size:16px;
+		}
